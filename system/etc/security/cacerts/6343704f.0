@@ -1,0 +1,76 @@
+-----BEGIN CERTIFICATE-----
+MIIDijCCAnKgAwIBAgIEMHcl+zANBgkqhkiG9w0BAQsFADBlMQswCQYDVQQGEwJD
+TjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzENMAsGA1UEChME
+U1JUQzERMA8GA1UECxMIVGVjaCBEZXYxEDAOBgNVBAMTB1NSVEMgQ0EwHhcNMTMw
+NzMwMTYyOTMwWhcNNDAxMjE1MTYyOTMwWjBlMQswCQYDVQQGEwJDTjEQMA4GA1UE
+CBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzENMAsGA1UEChMEU1JUQzERMA8G
+A1UECxMIVGVjaCBEZXYxEDAOBgNVBAMTB1NSVEMgQ0EwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCOri31/5mgGCCXFuW5jXVR/ASdZkNDblqb/gUu0RSp
+pifwkLmwEmzsuzXvCfLptsHCegeqDn15eKVDfq0iDn43C89Dmn0xUeudeuq8fV6F
+ycFyL32FMvynuInsLhAqda4JsKn5c4dcaE5Xwn+w08j5b12G7isaVC+NSwF9v8s/
+L1RLifUc1C2aahBqVPW5Zg43sDnq4x9/VuXYm7i5fZIJuSJXJb2rG8Ft7u2bjWyC
+xrB2mE8KhAHWVjzQuth0pbLzc5l3r6Utru68sG4Ysyon2B68g392GyFyUC+u4YzP
+GtRI1VRHdRfp1U4NqG3eR2GuvNrYAROnkrNOMGe4NZhhAgMBAAGjQjBAMB8GA1Ud
+EQQYMBaCFHJvYW0ucmFkaW9za3kuY29tLmNuMB0GA1UdDgQWBBTzZKy00M7bl0y0
+ShU0buLAafRA9jANBgkqhkiG9w0BAQsFAAOCAQEACmtxFtGgD3jOSAgVMUERkVmv
+sxJce7hqETg7+rRkMqyfE9Q2j8mnDpIcs/elbSM1f1/ySZs6EOGLHnl8ut8408LU
+iJ6916c3xwwhKPuDO6sW16WTXQj3yqSeXz6i+OP6F7yF6WskfApKR+C4fKV+JR5x
+ObufiwVmLO/ZgNO56X8j9fTuJye9F1w+1dXy/LmUABXgeNBpSghn1IJUOyhEHR1Y
+J+Q+iVzCiperuCReMxe4ktvuTE/y7jAC3uWh8/5ngiBqYDVEPM4CKE3MeITMVYh4
+C4k2DXjWNpc2GpfGdG0E6rP7sXTku1Yrcm52HzWOF326wgJCU903YNWUQANelw==
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 813114875 (0x307725fb)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=CN, ST=Beijing, L=Beijing, O=SRTC, OU=Tech Dev, CN=SRTC CA
+        Validity
+            Not Before: Jul 30 16:29:30 2013 GMT
+            Not After : Dec 15 16:29:30 2040 GMT
+        Subject: C=CN, ST=Beijing, L=Beijing, O=SRTC, OU=Tech Dev, CN=SRTC CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:8e:ae:2d:f5:ff:99:a0:18:20:97:16:e5:b9:8d:
+                    75:51:fc:04:9d:66:43:43:6e:5a:9b:fe:05:2e:d1:
+                    14:a9:a6:27:f0:90:b9:b0:12:6c:ec:bb:35:ef:09:
+                    f2:e9:b6:c1:c2:7a:07:aa:0e:7d:79:78:a5:43:7e:
+                    ad:22:0e:7e:37:0b:cf:43:9a:7d:31:51:eb:9d:7a:
+                    ea:bc:7d:5e:85:c9:c1:72:2f:7d:85:32:fc:a7:b8:
+                    89:ec:2e:10:2a:75:ae:09:b0:a9:f9:73:87:5c:68:
+                    4e:57:c2:7f:b0:d3:c8:f9:6f:5d:86:ee:2b:1a:54:
+                    2f:8d:4b:01:7d:bf:cb:3f:2f:54:4b:89:f5:1c:d4:
+                    2d:9a:6a:10:6a:54:f5:b9:66:0e:37:b0:39:ea:e3:
+                    1f:7f:56:e5:d8:9b:b8:b9:7d:92:09:b9:22:57:25:
+                    bd:ab:1b:c1:6d:ee:ed:9b:8d:6c:82:c6:b0:76:98:
+                    4f:0a:84:01:d6:56:3c:d0:ba:d8:74:a5:b2:f3:73:
+                    99:77:af:a5:2d:ae:ee:bc:b0:6e:18:b3:2a:27:d8:
+                    1e:bc:83:7f:76:1b:21:72:50:2f:ae:e1:8c:cf:1a:
+                    d4:48:d5:54:47:75:17:e9:d5:4e:0d:a8:6d:de:47:
+                    61:ae:bc:da:d8:01:13:a7:92:b3:4e:30:67:b8:35:
+                    98:61
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Alternative Name: 
+                DNS:roam.radiosky.com.cn
+            X509v3 Subject Key Identifier: 
+                F3:64:AC:B4:D0:CE:DB:97:4C:B4:4A:15:34:6E:E2:C0:69:F4:40:F6
+    Signature Algorithm: sha256WithRSAEncryption
+        0a:6b:71:16:d1:a0:0f:78:ce:48:08:15:31:41:11:91:59:af:
+        b3:12:5c:7b:b8:6a:11:38:3b:fa:b4:64:32:ac:9f:13:d4:36:
+        8f:c9:a7:0e:92:1c:b3:f7:a5:6d:23:35:7f:5f:f2:49:9b:3a:
+        10:e1:8b:1e:79:7c:ba:df:38:d3:c2:d4:88:9e:bd:d7:a7:37:
+        c7:0c:21:28:fb:83:3b:ab:16:d7:a5:93:5d:08:f7:ca:a4:9e:
+        5f:3e:a2:f8:e3:fa:17:bc:85:e9:6b:24:7c:0a:4a:47:e0:b8:
+        7c:a5:7e:25:1e:71:39:bb:9f:8b:05:66:2c:ef:d9:80:d3:b9:
+        e9:7f:23:f5:f4:ee:27:27:bd:17:5c:3e:d5:d5:f2:fc:b9:94:
+        00:15:e0:78:d0:69:4a:08:67:d4:82:54:3b:28:44:1d:1d:58:
+        27:e4:3e:89:5c:c2:8a:97:ab:b8:24:5e:33:17:b8:92:db:ee:
+        4c:4f:f2:ee:30:02:de:e5:a1:f3:fe:67:82:20:6a:60:35:44:
+        3c:ce:02:28:4d:cc:78:84:cc:55:88:78:0b:89:36:0d:78:d6:
+        36:97:36:1a:97:c6:74:6d:04:ea:b3:fb:b1:74:e4:bb:56:2b:
+        72:6e:76:1f:35:8e:17:7d:ba:c2:02:42:53:dd:37:60:d5:94:
+        40:03:5e:97
+SHA1 Fingerprint=0F:75:BE:19:BF:66:99:BB:48:86:23:79:A7:12:DE:6D:44:D1:95:A6

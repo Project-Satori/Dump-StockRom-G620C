@@ -28,3 +28,9 @@ fastboot flash log log.img
 
 @echo "Fastboot boot , rather than reboot"
 fastboot boot boot.img
+
+--- DIFF / uart-Little Kernel
+// Lumia 535
+UART 3
+// Common droid
+UART 2

@@ -30,7 +30,7 @@ fastboot flash log log.img
 fastboot boot boot.img
 
 --- DIFF / uart-Little Kernel
-// Lumia 535
-UART 3
-// Common droid
-UART 2
+// Lumia 535 - UART3
+// Common droid - UART2
+Same the SBL transfer the "DAL_PLATFORM_INFO", tell like <8016 4> as plat_type/subtype
+it also reserves the precious CDT/DDR info?

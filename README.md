@@ -40,4 +40,4 @@ it also reserves the precious CDT/DDR info?
 (similar as the 8x74's device-tree)\
 Refer: https://wiki.onakasuita.org/pukiwiki/?Chipidea
 4. Unluckily Lumia's **PIL-Image** seems encrypted, well we can't bear the adsp/wcnss's MBN.
-   can I use the 535-B2's dump SSD-Partition?
+   can I use the 535's dump SSD-Partition?

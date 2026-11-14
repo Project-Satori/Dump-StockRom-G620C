@@ -41,3 +41,6 @@ it also reserves the precious CDT/DDR info?
 Refer: https://wiki.onakasuita.org/pukiwiki/?Chipidea
 4. Unluckily Lumia's **PIL-Image** seems encrypted, well we can't bear the adsp/wcnss's MBN.
    can I use the 535's dump SSD-Partition?
+5. Why I need to "flash msimage.mbn" before using rawprogram0.xml/patch0.xml with QFIL\
+   I guess some tableItems or tools' patch0 process bugs\
+   *New GPT need an old valid GPT, curiously need fixes*

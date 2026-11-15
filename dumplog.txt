@@ -1,0 +1,6 @@
+; TZ Log Dump <>
+
+; Get descBlock
+db /p 0x0dc5f828 L4
+; Fetch RingBuffer
+db /p 0x0dc5f82c L0x7d0

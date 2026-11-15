@@ -1,27 +1,28 @@
 ### Simple Flash
-```bash
-# LiteBoot 
+```markdown
+## LiteBoot 
 # CSC/PIT
 ws 0 CSC/gpt.img 
-# BL
+## BL
 w sbl1 BL/sbl1.img 
 w tz BL/tz.img 
 w sdi BL/sdi.img 
 w rpm BL/rpm.img 
-w aboot BL/aboot.img 
-# CP
-w modem CP/modem.img 
-w modemst1 CP/modemst1.img 
-w modemst2 CP/modemst2.img 
+w aboot BL/aboot.img
 
 # Addition 
-# AP
+## AP
+fastboot flash partition gpt.img
 fastboot flash boot boot.img
 fastboot flash recovery recovery.img
 fastboot flash system system.img
 fastboot flash userdata userdata.img
 fastboot flash cache cache.img
-# MISC
+## CP
+w modem CP/modem.img 
+w modemst1 CP/modemst1.img 
+w modemst2 CP/modemst2.img 
+## MISC
 fastboot flash persist persist.img
 fastboot flash oeminfo oeminfo.mbn
 fastboot flash fsg fs_image.tar.gz.mbn.img

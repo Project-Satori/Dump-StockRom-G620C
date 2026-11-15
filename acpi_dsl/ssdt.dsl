@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20260408 (32-bit version)
- * Copyright (c) 2000 - 2026 Intel Corporation
+ * AML/ASL+ Disassembler version 20160729-32
+ * Copyright (c) 2000 - 2016 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of ssdt.aml
+ * Disassembly of ssdt.aml, Sun Nov 15 09:57:11 2026
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -45,9 +45,8 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             Name (_UID, Zero)  // _UID: Unique ID
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x02)
+                Name (RBUF, ResourceTemplate ()
                 {
-                     0x79, 0x00                                       // y.
                 })
                 Return (RBUF) /* \_SB_.VIB2._CRS.RBUF */
             }
@@ -65,44 +64,56 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             Name (_UID, One)  // _UID: Unique ID
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x011A)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8C, 0x20, 0x00, 0x01, 0x01, 0x01, 0x00, 0x08,  // . ......
-                    /* 0008 */  0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x17, 0x00,  // ........
-                    /* 0010 */  0x00, 0x19, 0x00, 0x23, 0x00, 0x00, 0x00, 0x2A,  // ...#...*
-                    /* 0018 */  0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x47, 0x49,  // .\_SB.GI
-                    /* 0020 */  0x4F, 0x30, 0x00, 0x8C, 0x20, 0x00, 0x01, 0x01,  // O0.. ...
-                    /* 0028 */  0x01, 0x00, 0x08, 0x00, 0x01, 0x00, 0x00, 0x00,  // ........
-                    /* 0030 */  0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23, 0x00,  // ......#.
-                    /* 0038 */  0x00, 0x00, 0x48, 0x00, 0x5C, 0x5F, 0x53, 0x42,  // ..H.\_SB
-                    /* 0040 */  0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00, 0x8C, 0x20,  // .GIO0.. 
-                    /* 0048 */  0x00, 0x01, 0x01, 0x01, 0x00, 0x08, 0x00, 0x02,  // ........
-                    /* 0050 */  0x00, 0x00, 0x00, 0x00, 0x17, 0x00, 0x00, 0x19,  // ........
-                    /* 0058 */  0x00, 0x23, 0x00, 0x00, 0x00, 0x41, 0x00, 0x5C,  // .#...A.\
-                    /* 0060 */  0x5F, 0x53, 0x42, 0x2E, 0x50, 0x4D, 0x30, 0x31,  // _SB.PM01
-                    /* 0068 */  0x00, 0x8C, 0x20, 0x00, 0x01, 0x01, 0x01, 0x00,  // .. .....
-                    /* 0070 */  0x08, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x17,  // ........
-                    /* 0078 */  0x00, 0x00, 0x19, 0x00, 0x23, 0x00, 0x00, 0x00,  // ....#...
-                    /* 0080 */  0x49, 0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x47,  // I.\_SB.G
-                    /* 0088 */  0x49, 0x4F, 0x30, 0x00, 0x8C, 0x20, 0x00, 0x01,  // IO0.. ..
-                    /* 0090 */  0x01, 0x01, 0x00, 0x08, 0x00, 0x01, 0x00, 0x00,  // ........
-                    /* 0098 */  0x00, 0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23,  // .......#
-                    /* 00A0 */  0x00, 0x00, 0x00, 0x4A, 0x00, 0x5C, 0x5F, 0x53,  // ...J.\_S
-                    /* 00A8 */  0x42, 0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00, 0x8C,  // B.GIO0..
-                    /* 00B0 */  0x20, 0x00, 0x01, 0x01, 0x01, 0x00, 0x08, 0x00,  //  .......
-                    /* 00B8 */  0x01, 0x00, 0x00, 0x00, 0x00, 0x17, 0x00, 0x00,  // ........
-                    /* 00C0 */  0x19, 0x00, 0x23, 0x00, 0x00, 0x00, 0x40, 0x00,  // ..#...@.
-                    /* 00C8 */  0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x50, 0x4D, 0x30,  // \_SB.PM0
-                    /* 00D0 */  0x31, 0x00, 0x8C, 0x20, 0x00, 0x01, 0x01, 0x01,  // 1.. ....
-                    /* 00D8 */  0x00, 0x08, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00,  // ........
-                    /* 00E0 */  0x17, 0x00, 0x00, 0x19, 0x00, 0x23, 0x00, 0x00,  // .....#..
-                    /* 00E8 */  0x00, 0x18, 0x06, 0x5C, 0x5F, 0x53, 0x42, 0x2E,  // ...\_SB.
-                    /* 00F0 */  0x50, 0x4D, 0x30, 0x31, 0x00, 0x8C, 0x20, 0x00,  // PM01.. .
-                    /* 00F8 */  0x01, 0x01, 0x01, 0x00, 0x08, 0x00, 0x01, 0x00,  // ........
-                    /* 0100 */  0x00, 0x00, 0x00, 0x17, 0x00, 0x00, 0x19, 0x00,  // ........
-                    /* 0108 */  0x23, 0x00, 0x00, 0x00, 0x28, 0x00, 0x5C, 0x5F,  // #...(.\_
-                    /* 0110 */  0x53, 0x42, 0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00,  // SB.GIO0.
-                    /* 0118 */  0x79, 0x00                                       // y.
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x002A
+                        }
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0048
+                        }
+                    GpioIo (Shared, PullDown, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.PM01", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0041
+                        }
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0049
+                        }
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x004A
+                        }
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.PM01", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0040
+                        }
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.PM01", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0618
+                        }
+                    GpioIo (Shared, PullUp, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0028
+                        }
                 })
                 Return (RBUF) /* \_SB_.EGP0._CRS.RBUF */
             }
@@ -114,15 +125,15 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             Name (_UID, One)  // _UID: Unique ID
             Name (_DEP, Package (0x03)  // _DEP: Dependencies
             {
-                \_SB.I2C3, , 
-                \_SB.PRXY, , 
-                \_SB.PEP0, 
+                \_SB.I2C3, 
+                \_SB.PRXY, 
+                \_SB.PEP0
             })
             Method (PRIM, 0, NotSerialized)
             {
                 Name (RBUF, Buffer (One)
                 {
-                     0x01                                             // .
+                     0x01                                             /* . */
                 })
                 Return (RBUF) /* \_SB_.ACC1.PRIM.RBUF */
             }
@@ -151,15 +162,15 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
                     Return (One)
                 }
 
-                Name (BUFF, Buffer (0x03){})
+                Name (BUFF, Buffer (0x03) {})
                 CreateByteField (BUFF, Zero, STAT)
                 CreateByteField (BUFF, 0x02, DATA)
                 BUFF = FLD0 /* \_SB_.ACC1._STA.FLD0 */
-                If ((STAT != Zero))
+                If (STAT != Zero)
                 {
                     Return (Zero)
                 }
-                ElseIf ((DATA == 0xF9))
+                ElseIf (DATA == 0xF9)
                 {
                     Return (0x0F)
                 }
@@ -171,21 +182,24 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x64)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8E, 0x19, 0x00, 0x01, 0x00, 0x01, 0x02, 0x00,  // ........
-                    /* 0008 */  0x00, 0x01, 0x06, 0x00, 0x80, 0x1A, 0x06, 0x00,  // ........
-                    /* 0010 */  0x18, 0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x49,  // ..\_SB.I
-                    /* 0018 */  0x32, 0x43, 0x33, 0x00, 0x8C, 0x20, 0x00, 0x01,  // 2C3.. ..
-                    /* 0020 */  0x00, 0x01, 0x00, 0x08, 0x00, 0x02, 0x00, 0x00,  // ........
-                    /* 0028 */  0x00, 0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23,  // .......#
-                    /* 0030 */  0x00, 0x00, 0x00, 0x51, 0x00, 0x5C, 0x5F, 0x53,  // ...Q.\_S
-                    /* 0038 */  0x42, 0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00, 0x8C,  // B.GIO0..
-                    /* 0040 */  0x20, 0x00, 0x01, 0x00, 0x01, 0x00, 0x08, 0x00,  //  .......
-                    /* 0048 */  0x02, 0x00, 0x00, 0x00, 0x00, 0x17, 0x00, 0x00,  // ........
-                    /* 0050 */  0x19, 0x00, 0x23, 0x00, 0x00, 0x00, 0x52, 0x00,  // ..#...R.
-                    /* 0058 */  0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x47, 0x49, 0x4F,  // \_SB.GIO
-                    /* 0060 */  0x30, 0x00, 0x79, 0x00                           // 0.y.
+                    I2cSerialBusV2 (0x0018, ControllerInitiated, 0x00061A80,
+                        AddressingMode7Bit, "\\_SB.I2C3",
+                        0x00, ResourceConsumer, , Exclusive,
+                        )
+                    GpioInt (Level, ActiveHigh, Shared, PullDown, 0x0000,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0051
+                        }
+                    GpioInt (Level, ActiveHigh, Shared, PullDown, 0x0000,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0052
+                        }
                 })
                 Return (RBUF) /* \_SB_.ACC1._CRS.RBUF */
             }
@@ -208,15 +222,15 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             Name (_UID, One)  // _UID: Unique ID
             Name (_DEP, Package (0x03)  // _DEP: Dependencies
             {
-                \_SB.I2C3, , 
-                \_SB.PRXY, , 
-                \_SB.PEP0, 
+                \_SB.I2C3, 
+                \_SB.PRXY, 
+                \_SB.PEP0
             })
             Method (PRIM, 0, NotSerialized)
             {
                 Name (RBUF, Buffer (One)
                 {
-                     0x01                                             // .
+                     0x01                                             /* . */
                 })
                 Return (RBUF) /* \_SB_.ACC2.PRIM.RBUF */
             }
@@ -246,15 +260,15 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
                     Return (One)
                 }
 
-                Name (BUFF, Buffer (0x03){})
+                Name (BUFF, Buffer (0x03) {})
                 CreateByteField (BUFF, Zero, STAT)
                 CreateByteField (BUFF, 0x02, DATA)
                 BUFF = FLD0 /* \_SB_.ACC2._STA.FLD0 */
-                If ((STAT != Zero))
+                If (STAT != Zero)
                 {
                     Return (Zero)
                 }
-                ElseIf (((DATA == 0x14) || (DATA == 0x15)))
+                ElseIf ((DATA == 0x14) || (DATA == 0x15))
                 {
                     Return (0x0F)
                 }
@@ -266,21 +280,24 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x64)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8E, 0x19, 0x00, 0x01, 0x00, 0x01, 0x02, 0x00,  // ........
-                    /* 0008 */  0x00, 0x01, 0x06, 0x00, 0x80, 0x1A, 0x06, 0x00,  // ........
-                    /* 0010 */  0x1E, 0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x49,  // ..\_SB.I
-                    /* 0018 */  0x32, 0x43, 0x33, 0x00, 0x8C, 0x20, 0x00, 0x01,  // 2C3.. ..
-                    /* 0020 */  0x00, 0x01, 0x00, 0x08, 0x00, 0x02, 0x00, 0x00,  // ........
-                    /* 0028 */  0x00, 0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23,  // .......#
-                    /* 0030 */  0x00, 0x00, 0x00, 0x51, 0x00, 0x5C, 0x5F, 0x53,  // ...Q.\_S
-                    /* 0038 */  0x42, 0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00, 0x8C,  // B.GIO0..
-                    /* 0040 */  0x20, 0x00, 0x01, 0x00, 0x01, 0x00, 0x08, 0x00,  //  .......
-                    /* 0048 */  0x02, 0x00, 0x00, 0x00, 0x00, 0x17, 0x00, 0x00,  // ........
-                    /* 0050 */  0x19, 0x00, 0x23, 0x00, 0x00, 0x00, 0x52, 0x00,  // ..#...R.
-                    /* 0058 */  0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x47, 0x49, 0x4F,  // \_SB.GIO
-                    /* 0060 */  0x30, 0x00, 0x79, 0x00                           // 0.y.
+                    I2cSerialBusV2 (0x001E, ControllerInitiated, 0x00061A80,
+                        AddressingMode7Bit, "\\_SB.I2C3",
+                        0x00, ResourceConsumer, , Exclusive,
+                        )
+                    GpioInt (Level, ActiveHigh, Shared, PullDown, 0x0000,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0051
+                        }
+                    GpioInt (Level, ActiveHigh, Shared, PullDown, 0x0000,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0052
+                        }
                 })
                 Return (RBUF) /* \_SB_.ACC2._CRS.RBUF */
             }
@@ -310,20 +327,21 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             {
                 "\\_SB.ACC3"
             })
-            Name (DBUF, Buffer (0x0D){})
+            Name (DBUF, Buffer (0x0D) {})
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x41)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8E, 0x19, 0x00, 0x01, 0x00, 0x01, 0x02, 0x00,  // ........
-                    /* 0008 */  0x00, 0x01, 0x06, 0x00, 0x80, 0x1A, 0x06, 0x00,  // ........
-                    /* 0010 */  0x0E, 0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x49,  // ..\_SB.I
-                    /* 0018 */  0x32, 0x43, 0x33, 0x00, 0x8C, 0x20, 0x00, 0x01,  // 2C3.. ..
-                    /* 0020 */  0x00, 0x01, 0x00, 0x03, 0x00, 0x01, 0x00, 0x00,  // ........
-                    /* 0028 */  0x00, 0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23,  // .......#
-                    /* 0030 */  0x00, 0x00, 0x00, 0x51, 0x00, 0x5C, 0x5F, 0x53,  // ...Q.\_S
-                    /* 0038 */  0x42, 0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00, 0x79,  // B.GIO0.y
-                    /* 0040 */  0x00                                             // .
+                    I2cSerialBusV2 (0x000E, ControllerInitiated, 0x00061A80,
+                        AddressingMode7Bit, "\\_SB.I2C3",
+                        0x00, ResourceConsumer, , Exclusive,
+                        )
+                    GpioInt (Edge, ActiveLow, Exclusive, PullUp, 0x0000,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0051
+                        }
                 })
                 Return (RBUF) /* \_SB_.ACC3._CRS.RBUF */
             }
@@ -332,9 +350,9 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             {
                 Buffer (0x14)
                 {
-                    /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  // ........
-                    /* 0008 */  0x28, 0x00, 0x00, 0x00, 0x00, 0x00, 0x30, 0x00,  // (.....0.
-                    /* 0010 */  0xFF, 0xFF, 0xFF, 0xFF                           // ....
+                    /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  /* ........ */
+                    /* 0008 */  0x28, 0x00, 0x00, 0x00, 0x00, 0x00, 0x30, 0x00,  /* (.....0. */
+                    /* 0010 */  0xFF, 0xFF, 0xFF, 0xFF                           /* .... */
                 }
             })
             Method (ROTM, 0, NotSerialized)
@@ -356,13 +374,13 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             Name (_UID, One)  // _UID: Unique ID
             Name (_DEP, Package (0x01)  // _DEP: Dependencies
             {
-                \_SB.PRXY, 
+                \_SB.PRXY
             })
             Name (PGID, Buffer (0x0A)
             {
                 "\\_SB.NRSD"
             })
-            Name (DBUF, Buffer (DBFL){})
+            Name (DBUF, Buffer (DBFL) {})
             CreateByteField (DBUF, Zero, STAT)
             CreateByteField (DBUF, 0x02, DVAL)
             CreateField (DBUF, 0x18, 0xA0, DEID)
@@ -383,7 +401,7 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
 
             Method (_PS0, 0, NotSerialized)  // _PS0: Power State 0
             {
-                DEID = Buffer (ESNL){}
+                DEID = Buffer (ESNL) {}
                 DVAL = Zero
                 DEID = PGID /* \_SB_.NRSD.PGID */
                 If (\_SB.ABD.AVBL)
@@ -394,7 +412,7 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
 
             Method (_PS3, 0, NotSerialized)  // _PS3: Power State 3
             {
-                DEID = Buffer (ESNL){}
+                DEID = Buffer (ESNL) {}
                 DVAL = 0x03
                 DEID = PGID /* \_SB_.NRSD.PGID */
                 If (\_SB.ABD.AVBL)
@@ -409,27 +427,31 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             Name (_HID, "NOKI0B00")  // _HID: Hardware ID
             Name (_DEP, Package (0x02)  // _DEP: Dependencies
             {
-                \_SB.PM01, , 
-                \_SB.PMIC, 
+                \_SB.PM01, 
+                \_SB.PMIC
             })
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x6B)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8C, 0x20, 0x00, 0x01, 0x00, 0x01, 0x00, 0x0D,  // . ......
-                    /* 0008 */  0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x17, 0x00,  // ........
-                    /* 0010 */  0x00, 0x19, 0x00, 0x23, 0x00, 0x00, 0x00, 0x90,  // ...#....
-                    /* 0018 */  0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x50, 0x4D,  // .\_SB.PM
-                    /* 0020 */  0x30, 0x31, 0x00, 0x8C, 0x20, 0x00, 0x01, 0x00,  // 01.. ...
-                    /* 0028 */  0x01, 0x00, 0x09, 0x00, 0x01, 0x00, 0x00, 0x00,  // ........
-                    /* 0030 */  0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23, 0x00,  // ......#.
-                    /* 0038 */  0x00, 0x00, 0x9A, 0x00, 0x5C, 0x5F, 0x53, 0x42,  // ....\_SB
-                    /* 0040 */  0x2E, 0x50, 0x4D, 0x30, 0x31, 0x00, 0x8C, 0x20,  // .PM01.. 
-                    /* 0048 */  0x00, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x03,  // ........
-                    /* 0050 */  0x00, 0x00, 0x00, 0x00, 0x17, 0x00, 0x00, 0x19,  // ........
-                    /* 0058 */  0x00, 0x23, 0x00, 0x00, 0x00, 0x08, 0x07, 0x5C,  // .#.....\
-                    /* 0060 */  0x5F, 0x53, 0x42, 0x2E, 0x50, 0x4D, 0x30, 0x31,  // _SB.PM01
-                    /* 0068 */  0x00, 0x79, 0x00                                 // .y.
+                    GpioInt (Edge, ActiveBoth, Shared, PullUp, 0x0000,
+                        "\\_SB.PM01", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0090
+                        }
+                    GpioInt (Edge, ActiveHigh, Shared, PullUp, 0x0000,
+                        "\\_SB.PM01", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x009A
+                        }
+                    GpioIo (Exclusive, PullNone, 0x0000, 0x0000, IoRestrictionNone,
+                        "\\_SB.PM01", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0708
+                        }
                 })
                 Return (RBUF) /* \_SB_.NEDD._CRS.RBUF */
             }
@@ -465,23 +487,24 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             {
                 "\\_SB.PRX1"
             })
-            Name (DBUF, Buffer (0x0D){})
+            Name (DBUF, Buffer (0x0D) {})
             CreateByteField (DBUF, Zero, STAT)
             CreateField (DBUF, 0x10, 0x50, DEID)
             CreateByteField (DBUF, 0x0C, DVAL)
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x41)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8E, 0x19, 0x00, 0x01, 0x00, 0x01, 0x02, 0x00,  // ........
-                    /* 0008 */  0x00, 0x01, 0x06, 0x00, 0x80, 0x1A, 0x06, 0x00,  // ........
-                    /* 0010 */  0x48, 0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x49,  // H.\_SB.I
-                    /* 0018 */  0x32, 0x43, 0x33, 0x00, 0x8C, 0x20, 0x00, 0x01,  // 2C3.. ..
-                    /* 0020 */  0x00, 0x01, 0x00, 0x02, 0x00, 0x01, 0x00, 0x00,  // ........
-                    /* 0028 */  0x00, 0x00, 0x17, 0x00, 0x00, 0x19, 0x00, 0x23,  // .......#
-                    /* 0030 */  0x00, 0x00, 0x00, 0x50, 0x00, 0x5C, 0x5F, 0x53,  // ...P.\_S
-                    /* 0038 */  0x42, 0x2E, 0x47, 0x49, 0x4F, 0x30, 0x00, 0x79,  // B.GIO0.y
-                    /* 0040 */  0x00                                             // .
+                    I2cSerialBusV2 (0x0048, ControllerInitiated, 0x00061A80,
+                        AddressingMode7Bit, "\\_SB.I2C3",
+                        0x00, ResourceConsumer, , Exclusive,
+                        )
+                    GpioInt (Level, ActiveLow, Exclusive, PullUp, 0x0000,
+                        "\\_SB.GIO0", 0x00, ResourceConsumer, ,
+                        )
+                        {   // Pin list
+                            0x0050
+                        }
                 })
                 Return (RBUF) /* \_SB_.PRX1._CRS.RBUF */
             }
@@ -490,7 +513,7 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             {
                 Name (RBUF, Buffer (One)
                 {
-                     0x02                                             // .
+                     0x02                                             /* . */
                 })
                 Return (RBUF) /* \_SB_.PRX1.MODE.RBUF */
             }
@@ -509,18 +532,18 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             {
                 "\\_SB.ALS1"
             })
-            Name (DBUF, Buffer (0x0D){})
+            Name (DBUF, Buffer (0x0D) {})
             CreateByteField (DBUF, Zero, STAT)
             CreateField (DBUF, 0x10, 0x50, DEID)
             CreateByteField (DBUF, 0x0C, DVAL)
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                Name (RBUF, Buffer (0x1E)
+                Name (RBUF, ResourceTemplate ()
                 {
-                    /* 0000 */  0x8E, 0x19, 0x00, 0x01, 0x00, 0x01, 0x02, 0x00,  // ........
-                    /* 0008 */  0x00, 0x01, 0x06, 0x00, 0x80, 0x1A, 0x06, 0x00,  // ........
-                    /* 0010 */  0x48, 0x00, 0x5C, 0x5F, 0x53, 0x42, 0x2E, 0x49,  // H.\_SB.I
-                    /* 0018 */  0x32, 0x43, 0x33, 0x00, 0x79, 0x00               // 2C3.y.
+                    I2cSerialBusV2 (0x0048, ControllerInitiated, 0x00061A80,
+                        AddressingMode7Bit, "\\_SB.I2C3",
+                        0x00, ResourceConsumer, , Exclusive,
+                        )
                 })
                 Return (RBUF) /* \_SB_.ALS1._CRS.RBUF */
             }
@@ -529,7 +552,7 @@ DefinitionBlock ("", "SSDT", 1, "NOKIA ", "MSM8212 ", 0x00000003)
             {
                 Name (RBUF, Buffer (One)
                 {
-                     0x01                                             // .
+                     0x01                                             /* . */
                 })
                 Return (RBUF) /* \_SB_.ALS1.MODE.RBUF */
             }

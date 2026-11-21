@@ -13,3 +13,4 @@ Refer: https://wiki.onakasuita.org/pukiwiki/?Chipidea
 5. Why I need to "flash msimage.mbn" before using rawprogram0.xml/patch0.xml with QFIL\
    I guess some tableItems or tools' patch0 process bugs\
    **New GPT need an old valid GPT, curiously need fixes**
+6. **"D+ gnd"** EDL cable is disabled functionally, but not fused forever.
